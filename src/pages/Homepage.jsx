@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 const Homepage = () => {
   return (
-    <section className='font-space'>
+    <section className="font-space">
       <div className="bg-[#F0F8FF] h-screen px-10 font-space">
         <div className="flex justify-center items-center ">
           <div className="flex flex-col">
@@ -235,7 +235,51 @@ const Homepage = () => {
               “We struggled for years to find an IT company that we could trust.
               While others would try to sell us IT solutions. We actually took
               the time to listen to what made us unique as a business.”
-            </p>o
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-7 px-10 my-15 bg-[#F0F8FF]">
+        <div>
+          <h1>
+            Here’s our latest updates from the{" "}
+            <span className="text-[#28D08A]">news</span>
+          </h1>
+        </div>
+        <div className="flex gap-7 justify-between  items-center ">
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/newsOne.png" alt="" />
+            <p>May 30</p>
+            <h3 className="font-semibold">
+              The future is now: Explore Techty's AI-Powered tools
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/newsTwo.png" alt="" />
+            <p>May 30</p>
+            <h3 className="font-semibold">
+              Cybersecurity threats in 2023: How AI can keep you protected
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/newsThree.png" alt="" />
+            <p>May 30</p>
+            <h3 className="font-semibold">
+              5 reasons why Techty is the go-to choice for small business.
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
           </div>
         </div>
       </div>
