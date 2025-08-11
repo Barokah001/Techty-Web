@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 const Homepage = () => {
   return (
-    <section>
+    <section className='font-space'>
       <div className="bg-[#F0F8FF] h-screen px-10 font-space">
         <div className="flex justify-center items-center ">
           <div className="flex flex-col">
@@ -205,8 +205,7 @@ const Homepage = () => {
             saying about us.
           </h1>
         </div>
-
-        <div>
+        <div className="flex justify-center items-center gap-5">
           <div className="flex flex-col items-start justify-center h-[230px]">
             <p>
               “We struggled for years to find an IT company that we could trust.
@@ -214,10 +213,34 @@ const Homepage = () => {
               the time to listen to what made us unique as a business.”
             </p>
           </div>
+
+          <div className="flex flex-col items-start justify-center h-[230px]">
+            <p>
+              “We struggled for years to find an IT company that we could trust.
+              While others would try to sell us IT solutions. We actually took
+              the time to listen to what made us unique as a business.”
+            </p>
+          </div>
+
+          <div className="flex flex-col items-start justify-center h-[230px]">
+            <p>
+              “We struggled for years to find an IT company that we could trust.
+              While others would try to sell us IT solutions. We actually took
+              the time to listen to what made us unique as a business.”
+            </p>
+          </div>
+
+          <div className="flex flex-col items-start justify-center h-[230px]">
+            <p>
+              “We struggled for years to find an IT company that we could trust.
+              While others would try to sell us IT solutions. We actually took
+              the time to listen to what made us unique as a business.”
+            </p>o
+          </div>
         </div>
       </div>
-      
-          <Footer />  
+
+      <Footer />
     </section>
   );
 }
