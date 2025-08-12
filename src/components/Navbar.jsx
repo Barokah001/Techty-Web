@@ -1,48 +1,70 @@
 import React from "react";
-import Button from './Button'
+import Button from "./Button";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center px-10 py-3 bg-[#F0F8FF] font-space">
+    <nav className="flex justify-between items-center px-10 py-3 bg-[#F0F8FF] font-space">
       <div className="flex gap-1 justify-center items-center">
         <img src="/images/Logo..png" />
         <h1 className="text-2xl font-bold">Techty</h1>
       </div>
 
-      <div className="flex justify-betwee gap-5 items-center">
-        <Navlink
+      <div className="flex justify-between gap-5 items-center">
+        <NavLink
           to="/"
-          className="px-3 gap-4 text-l font-normal text-[#171A1F] hover:text-[#28D08A]"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#28D08A] font-semibold underline underline-offset-8"
+              : "text-normal text-black"
+          }
         >
           Home
-        </Navlink>
-        <Navlink
+        </NavLink>
+        <NavLink
           to="/about"
-          className="px-3 gap-4 text-l font-normal text-[#171A1F] hover:text-[#28D08A]"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#28D08A] font-semibold underline underline-offset-8"
+              : "text-normal text-black"
+          }
         >
           About
-        </Navlink>
-        <Navlink
+        </NavLink>
+        <NavLink
           to="/services"
-          className="px-3 gap-4 text-l font-normal text-[#171A1F] hover:text-[#28D08A]"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#28D08A] font-semibold underline underline-offset-8"
+              : "text-normal text-black"
+          }
         >
           Services
-        </Navlink>
-        <Navlink
+        </NavLink>
+        <NavLink
           to="/blog"
-          className="px-3 gap-4 text-l font-normal text-[#171A1F] hover:text-[#28D08A]"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#28D08A] font-semibold underline underline-offset-8"
+              : "text-normal text-black"
+          }
         >
           Blog
-        </Navlink>
-        <Navlink
+        </NavLink>
+        <NavLink
           to="/contact"
-          className="px-3 gap-4 text-l font-normal text-[#171A1F] hover:text-[#28D08A]"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#28D08A] font-semibold underline underline-offset-8"
+              : "text-normal text-black"
+          }
         >
           Contact Us
-        </Navlink>
+        </NavLink>
+
         <Button />
       </div>
-    </div>
+    </nav>
   );
 };
 

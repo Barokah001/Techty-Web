@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-const Contact = () => {
+const About = () => {
   return (
     <>
     <Navbar />
@@ -11,4 +11,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default About

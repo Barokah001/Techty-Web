@@ -37,16 +37,16 @@ const Footer = () => {
         <div className="flex flex-col items-center h-[230px]">
           <h3 className="text-xl font-semibold">Quick links</h3>
           <ul>
-            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
+            <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
               <a href="">About</a>
             </li>
-            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
+            <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
               <a href="">Services</a>
             </li>
-            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
+            <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
               <a href="">Blog</a>
             </li>
-            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
+            <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
               <a href="">Contact Us</a>
             </li>
           </ul>
@@ -55,13 +55,13 @@ const Footer = () => {
         <div className="flex flex-col items-center h-[230px]">
           <h3 className="text-xl font-semibold">Socials</h3>
           <ul>
-            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
+            <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
               <a href="">Twitter</a>
             </li>
-            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
+            <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
               <a href="">Facebook</a>
             </li>
-            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
+            <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
               <a href="">LinkedIn</a>
             </li>
           </ul>

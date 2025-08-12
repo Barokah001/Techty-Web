@@ -1,10 +1,12 @@
 import React from 'react'
 import Button from '../components/Button';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const Homepage = () => {
   return (
     <section className="font-space">
+      <Navbar />
       <div className="bg-[#F0F8FF] h-screen px-10 font-space">
         <div className="flex justify-center items-center ">
           <div className="flex flex-col">
@@ -34,12 +36,15 @@ const Homepage = () => {
                 className="rounded-md w-[860px]"
               />
             </div>
-            <div className="flex justify-center gap-3 py-7">
-              <h3 className="font-semibold text-l">Trustpilot</h3>
+            <div className="flex justify-center items-center gap-2 py-2">
+              <h3 className="font-semibold text-normal">Trustpilot</h3>
+              <img src="/images/stars.png" alt="" />
+              <p className="text-xs">4900 + 310</p>
             </div>
           </div>
         </div>
         <hr className="border-t border-gray-300 w-[90%] my-5" />
+
         <div className="flex justify-between items-center">
           <div>
             <p className="text-xl">Thousands of businesses use Techty</p>
@@ -74,7 +79,9 @@ const Homepage = () => {
           </div>
 
           <div className="flex justify-center gap-5 cursor-pointer">
-            <div className="text-6xl font-semibold h-[73px]">02</div>
+            <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
+              02
+            </div>
             <div className="flex flex-col items-start">
               <h3 className="text-[#171A1F] font-semibold">Data Analysis</h3>
               <p className="text-[#4E4E4E]">
@@ -84,7 +91,9 @@ const Homepage = () => {
           </div>
 
           <div className="flex justify-center gap-5 cursor-pointer">
-            <div className="text-6xl font-semibold h-[73px]">03</div>
+            <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
+              03
+            </div>
             <div className="flex flex-col items-start">
               <h3 className="text-[#171A1F] font-semibold">Analyze Product</h3>
               <p className="text-[#4E4E4E]">
@@ -94,25 +103,108 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-10 items-center my-10 w-full">
-          <div className=" w-3/4">
-            <img src="/images/aboutSc.png" alt="" />
-          </div>
-          <div className="flex flex-col items-start gap-8 w-3/4">
-            <div className="flex flex-col gap-5">
-              <h3 className="text-[#171A1F] font-semibold">Collect Ideas</h3>
-              <p className="text-[#4E4E4E] w-135">
-                With our Techty company, you can create landing pages that
-                convert more visitors than any other website. You can easily
-                create a page using a variety of unique blocks.
-              </p>
+        <hr className="border-t-2 border-[#28D08A] w-[90%]" />
+
+        <div className="flex">
+          <div className="flex justify-center gap-10 items-center my-10 w-full">
+            <div className=" w-3/4">
+              <img src="/images/aboutSc.png" alt="" />
             </div>
-            <ul className="list-disc text-[#4E4E4E] px-5">
-              <li>We collect ideas from different design inspirations,</li>
-              <li>Analysis data for any kind of corrections.</li>
-              <li>Finalize the product for the production to be done.</li>
-            </ul>
-            <Button />
+            <div className="flex flex-col items-start gap-8 w-3/4">
+              <div className="flex flex-col gap-5">
+                <h3 className="text-[#171A1F] font-semibold">Collect Ideas</h3>
+                <p className="text-[#4E4E4E] w-135">
+                  With our Techty company, you can create landing pages that
+                  convert more visitors than any other website. You can easily
+                  create a page using a variety of unique blocks.
+                </p>
+              </div>
+              <div className="flex flex-col text-[#4E4E4E] gap-2">
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>
+                    We collect ideas from different design inspirations,
+                  </p>{" "}
+                </div>
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>Analysis data for any kind of corrections.</p>
+                </div>
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>Finalize the product for the production to be done.</p>
+                </div>
+              </div>
+              <Button />
+            </div>
+          </div>
+
+
+        {/* HIDDEN DIVS */}
+          <div className="flex justify-center gap-10 items-center my-10 w-full">
+            <div className=" w-3/4">
+              <img src="/images/aboutSc.png" alt="" />
+            </div>
+            <div className="flex flex-col items-start gap-8 w-3/4">
+              <div className="flex flex-col gap-5">
+                <h3 className="text-[#171A1F] font-semibold">Collect Ideas</h3>
+                <p className="text-[#4E4E4E] w-135">
+                  With our Techty company, you can create landing pages that
+                  convert more visitors than any other website. You can easily
+                  create a page using a variety of unique blocks.
+                </p>
+              </div>
+              <div className="flex flex-col text-[#4E4E4E] gap-2">
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>
+                    We collect ideas from different design inspirations,
+                  </p>{" "}
+                </div>
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>Analysis data for any kind of corrections.</p>
+                </div>
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>Finalize the product for the production to be done.</p>
+                </div>
+              </div>
+              <Button />
+            </div>
+          </div>
+
+          <div className="flex justify-center gap-10 items-center my-10 w-full">
+            <div className=" w-3/4">
+              <img src="/images/aboutSc.png" alt="" />
+            </div>
+            <div className="flex flex-col items-start gap-8 w-3/4">
+              <div className="flex flex-col gap-5">
+                <h3 className="text-[#171A1F] font-semibold">Collect Ideas</h3>
+                <p className="text-[#4E4E4E] w-135">
+                  With our Techty company, you can create landing pages that
+                  convert more visitors than any other website. You can easily
+                  create a page using a variety of unique blocks.
+                </p>
+              </div>
+              <div className="flex flex-col text-[#4E4E4E] gap-2">
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>
+                    We collect ideas from different design inspirations,
+                  </p>{" "}
+                </div>
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>Analysis data for any kind of corrections.</p>
+                </div>
+                <div className="flex gap-1">
+                  <img src="/images/checkbox.png" alt="" />
+                  <p>Finalize the product for the production to be done.</p>
+                </div>
+              </div>
+              <Button />
+            </div>
           </div>
         </div>
       </div>
@@ -198,7 +290,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 bg-[#FFFFFF]">
+      <div className="flex flex-col gap-6 bg-[#FFFFFF] py-15 px-10">
         <div className="flex items-center justify-center">
           <h1 className="text-3xl font-semibold items-center justify-center">
             Read what the <span className="text-[#28D08A]">customers </span> are
@@ -240,9 +332,9 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-7 px-10 my-15 bg-[#F0F8FF]">
-        <div>
-          <h1>
+      <div className="flex flex-col justify-center items-center gap-7 px-10 py-15 bg-[#F0F8FF]">
+        <div className="flex justify-center items-center w-85">
+          <h1 className="text-3xl font-bold">
             Here’s our latest updates from the{" "}
             <span className="text-[#28D08A]">news</span>
           </h1>

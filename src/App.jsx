@@ -5,15 +5,17 @@ import Homepage from './pages/Homepage'
 import Blog from './pages/Blog'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import About from './pages/About';
 
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage />}/>
+        <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />}/>
         <Route path='/services' element={<Services />}/>
         <Route path='/contact' element={<Contact />}/>
