@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import FetchedData from '../components/FetchedData';
 
 const Homepage = () => {
   return (
@@ -141,7 +142,7 @@ const Homepage = () => {
 
 
         {/* HIDDEN DIVS */}
-          <div className="flex justify-center gap-10 items-center my-10 w-full">
+          {/* <div className="flex justify-center gap-10 items-center my-10 w-full">
             <div className=" w-3/4">
               <img src="/images/aboutSc.png" alt="" />
             </div>
@@ -205,7 +206,7 @@ const Homepage = () => {
               </div>
               <Button />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -290,47 +291,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 bg-[#FFFFFF] py-15 px-10">
-        <div className="flex items-center justify-center">
-          <h1 className="text-3xl font-semibold items-center justify-center">
-            Read what the <span className="text-[#28D08A]">customers </span> are
-            saying about us.
-          </h1>
-        </div>
-        <div className="flex justify-center items-center gap-5">
-          <div className="flex flex-col items-start justify-center h-[230px]">
-            <p>
-              “We struggled for years to find an IT company that we could trust.
-              While others would try to sell us IT solutions. We actually took
-              the time to listen to what made us unique as a business.”
-            </p>
-          </div>
-
-          <div className="flex flex-col items-start justify-center h-[230px]">
-            <p>
-              “We struggled for years to find an IT company that we could trust.
-              While others would try to sell us IT solutions. We actually took
-              the time to listen to what made us unique as a business.”
-            </p>
-          </div>
-
-          <div className="flex flex-col items-start justify-center h-[230px]">
-            <p>
-              “We struggled for years to find an IT company that we could trust.
-              While others would try to sell us IT solutions. We actually took
-              the time to listen to what made us unique as a business.”
-            </p>
-          </div>
-
-          <div className="flex flex-col items-start justify-center h-[230px]">
-            <p>
-              “We struggled for years to find an IT company that we could trust.
-              While others would try to sell us IT solutions. We actually took
-              the time to listen to what made us unique as a business.”
-            </p>
-          </div>
-        </div>
-      </div>
+      // <FetchedData />
 
       <div className="flex flex-col justify-center items-center gap-7 px-10 py-15 bg-[#F0F8FF]">
         <div className="flex justify-center items-center w-85">

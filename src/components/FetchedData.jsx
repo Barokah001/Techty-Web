@@ -8,7 +8,8 @@ const FetchedData = () => {
     const dataFetch = async () => {
       try {
         const res = await axios.get("https://dummyjson.com/posts");
-
+        const result = res.data.comments;
+        setComments(result)
       } catch (error) {
         console.log(error.message);
       }
@@ -19,8 +20,8 @@ const FetchedData = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-5">
-        {comments.map((comment) => (
-          <div className="flex flex-col p-3 gap-4 rounded-md shadow-xl border-1">
+        {comments.map((comment, index) => (
+            <div key={index} className="flex flex-col p-3 gap-4 rounded-md shadow-xl border-1">
             <p>{comment.id}</p>
             <p>{comment.title}</p>
             <p>{comment.body}</p>
