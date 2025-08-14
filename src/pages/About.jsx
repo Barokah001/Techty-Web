@@ -10,9 +10,9 @@ const About = () => {
         <div className="w-full">
           <img src="/images/frame1.png" className="h-[500px]" />
         </div>
-        <div className="flex flex-col gap-7 w-full">
+        <div className="flex flex-col gap-7 w-full text-justify">
           <div className="flex flex-col gap-3">
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-bold">
               <span className="text-[#28D08A]">About</span> Techty
             </h1>
             <p className="w-120">
@@ -43,9 +43,70 @@ const About = () => {
         </div>
       </div>
 
+      <div className="flex justify-between items-start py-15 px-10 bg-[#FFFFFF] font-space w-full min-h-screen text-justify">
+        <div className="flex flex-col gap-4 items-start text-[#4E4E4E] w-1/2">
+          <h2 className="font-semibold text-xl text-black">
+            Message from <span className="text-[#28D08A]">Founder</span>
+          </h2>
+          <p className="w-115">
+            I would like to take a moment to express my sincere gratitude for
+            choosing our IT services. As the founder of this company, I am proud
+            to say that we are committed to providing the best possible
+            solutions for your business needs.
+          </p>
+          <p className="w-115">
+            We understand the challenges that come with managing an enterprise
+            in the digital age, and we are dedicated to delivering innovative
+            and reliable IT services to help you navigate these challenges with
+            ease.
+          </p>
+          <p className="w-115">
+            Our team of experts is constantly working to improve our services
+            and stay up-to-date with the latest technological advancements. We
+            strive to provide personalized solutions that cater to your specific
+            requirements, ensuring that your business operations run smoothly
+            and efficiently.
+          </p>
 
-      <div className='flex justify-center items-center px-10 '>
+          <div>
+            <h3 className="text-l font-semibold">John Willams</h3>
+            <p>Founder, Ceo</p>
+          </div>
+        </div>
 
+        <div>
+          <img src="/images/frame2.png" alt="" className="h-[550px]" />
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-8 items-center justify-center px-10 py-15 w-full font-space">
+        <h1 className="justify-center items-center w-100 text-center text-3xl font-bold">
+          Our <span className="text-[#28D08A]"> team</span> behind all the
+          success we have
+        </h1>
+
+        <div className="flex justify-center items-center gap-10 w-full">
+          <div className="flex flex-col gap-3 rounded-md">
+            <img src="/images/frame3.png" alt="" />
+            <h3 className="font-bold text-l">Hyeon Vivek</h3>
+            <p className="text-[#4E4E4E]">Financial Consultant</p>
+          </div>
+          <div className="flex flex-col gap-3 rounded-md">
+            <img src="/images/frame4.png" alt="" />
+            <h3 className="font-bold text-l">Hyeon Vivek</h3>
+            <p className="text-[#4E4E4E]">Financial Consultant</p>
+          </div>
+          <div className="flex flex-col gap-3 rounded-md">
+            <img src="/images/frame3.png" alt="" />
+            <h3 className="font-bold text-l">Hyeon Vivek</h3>
+            <p className="text-[#4E4E4E]">Financial Consultant</p>
+          </div>
+          <div className="flex flex-col gap-3 rounded-md">
+            <img src="/images/frame4.png" alt="" />
+            <h3 className="font-bold text-l">Hyeon Vivek</h3>
+            <p className="text-[#4E4E4E]">Financial Consultant</p>
+          </div>
+        </div>
       </div>
       <Footer />
     </>

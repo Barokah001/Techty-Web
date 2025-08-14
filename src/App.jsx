@@ -11,7 +11,6 @@ import About from './pages/About';
 const App = () => {
   return (
     <div>
-      {/* <Navbar /> */}
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage />}/>
