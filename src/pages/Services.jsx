@@ -145,7 +145,7 @@ const Services = () => {
         <div className="flex justify-between items-start w-full bg-[#ffffff] p-10">
           <div className="flex flex-col justify-start ">
             <div className="flex flex-col gap-3 justify-start">
-              <h2 className="font-semibold text-xl">On Demand</h2>
+              <h2 className="font-semibold text-xl">On Maintenance</h2>
               <p className="text-[#495460] pb-3">
                 Get all these features when you are using as starter.
               </p>
