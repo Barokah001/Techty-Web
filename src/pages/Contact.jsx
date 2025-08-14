@@ -72,20 +72,17 @@ const Contact = () => {
             </p>
 
             <div className="flex w-full">
-              <form
-                action=""
-                className="flex flex-col gap-3 min-w-xl h-auto "
-              >
+              <form action="" className="flex flex-col gap-3 min-w-xl h-auto ">
                 <div className="flex justify-center items-center gap-5 w-full">
                   <input
                     type="text"
                     placeholder="Name"
-                    className="p-2 bg-gray-100 w-1/2 rounded-md"
+                    className="p-2 bg-gray-100 w-1/2 rounded-md focus:outline-none focus:ring-0"
                   />
                   <input
                     type="email"
                     placeholder="Email"
-                    className="p-2 bg-gray-100 w-1/2 rounded-md"
+                    className="p-2 bg-gray-100 w-1/2 rounded-md focus:outline-none focus:ring-0"
                   />
                 </div>
 
@@ -93,11 +90,13 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Message"
-                    className="p-2 bg-gray-100 w-full pb-50 rounded-md"
+                    className="p-2 bg-gray-100 w-full pb-50 rounded-md focus:outline-none focus:ring-0"
                   />
                 </div>
 
-                <button className="w-full bg-[#28D08A] p-2 text-white cursor-pointer rounded-md">Send Message</button>
+                <button className="w-full bg-[#28D08A] p-2 text-white cursor-pointer rounded-md">
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
