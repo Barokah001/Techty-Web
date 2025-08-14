@@ -291,11 +291,11 @@ const Homepage = () => {
         </div>
       </div>
 
-      // <FetchedData />
+      {/* <FetchedData /> */}
 
       <div className="flex flex-col justify-center items-center gap-7 px-10 py-15 bg-[#F0F8FF]">
         <div className="flex justify-center items-center w-85">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-3xl font-bold text-center">
             Here’s our latest updates from the{" "}
             <span className="text-[#28D08A]">news</span>
           </h1>
