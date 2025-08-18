@@ -20,11 +20,11 @@ const Services = () => {
         </div>
 
         <div className="flex justify-center items-center gap-10 w-full">
-          <div className="flex flex-col gap-3 justify-start p-3 bg-white h-[300px]">
+          <div clas5Name="flex flex-col gap-4 justify-start p-3 bg-white h-[300px]">
             <div>
               <img src="/images/vector1.png" alt="" />
             </div>
-            <div>
+            <div className='flex flex-col gap-3'>
               <h3 className="font-semibold text-xl">Online Marketing</h3>
               <p className="text-[#4E4E4E]">
                 In the new era of technology we look in the future with
@@ -35,11 +35,11 @@ const Services = () => {
               <img src="/images/vector5.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-3 justify-start p-3 bg-white h-[300px]">
+          <div className="flex flex-col gap-5 justify-start p-3 bg-white h-[300px]">
             <div>
               <img src="/images/vector1.png" alt="" />
             </div>
-            <div>
+            <div className='flex flex-col gap-3'>
               <h3 className="font-semibold text-xl">Startup Business</h3>
               <p className="text-[#4E4E4E]">
                 In the new era of technology we look in the future with
@@ -50,11 +50,11 @@ const Services = () => {
               <img src="/images/vector5.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-3 justify-start p-3 bg-white h-[300px]">
+          <div className="flex flex-col gap-5 justify-start p-3 bg-white h-[300px]">
             <div>
               <img src="/images/vector1.png" alt="" />
             </div>
-            <div>
+            <div className='flex flex-col gap-3'>
               <h3 className="font-semibold text-xl">Business Growth</h3>
               <p className="text-[#4E4E4E]">
                 In the new era of technology we look in the future with
@@ -65,11 +65,11 @@ const Services = () => {
               <img src="/images/vector5.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-3 justify-start p-3 bg-white h-[300px]">
+          <div className="flex flex-col gap-5 justify-start p-3 bg-white h-[300px]">
             <div>
               <img src="/images/vector1.png" alt="" />
             </div>
-            <div>
+            <div className='flex flex-col gap-3'>
               <h3 className="font-semibold text-xl">Development</h3>
               <p className="text-[#4E4E4E]">
                 In the new era of technology we look in the future with
@@ -131,13 +131,13 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center bg-[#F0F8FF] rounded-lg p-8">
+          <div className="flex flex-col gap-8 justify-center items-center bg-[#F0F8FF] rounded-lg p-8">
             <h1 className="font-semibold text-2xl">Quick Solutions</h1>
             <div className="flex">
               <h1 className="font-bold text-5xl">$20</h1>
               <p className="font-semibold text-2xl">/hour</p>
             </div>
-            <button className="w-90 bg-[#28D08A] text-white p-2 rounded-md">
+            <button className="w-90 bg-[#28D08A] text-white p-2 rounded-md cursor-pointer">
               Hire an Expert
             </button>
           </div>
@@ -184,13 +184,13 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center bg-[#F0F8FF] rounded-lg p-8">
+          <div className="flex flex-col gap-8 justify-center items-center bg-[#F0F8FF] rounded-lg p-8">
             <h1 className="font-semibold text-2xl">Quick Solutions</h1>
             <div className="flex">
               <h1 className="font-bold text-5xl">$20</h1>
               <p className="font-semibold text-2xl">/hour</p>
             </div>
-            <button className="w-90 bg-[#28D08A] text-white p-2 rounded-md">
+            <button className="w-90 bg-[#28D08A] text-white p-2 rounded-md cursor-pointer">
               Hire an Expert
             </button>
           </div>

@@ -5,10 +5,120 @@ import Footer from '../components/Footer'
 const Blog = () => {
   return (
     <>
-    <Navbar />
-    <Footer />
+      <Navbar />
+      <div className="flex flex-col gap-7 items-center justify-center px-10 py-15 bg-[#F1F1F1] font-space ">
+        <div className="flex flex-col text-center gap-5 items-center justify-center">
+          <h1 className="text-3xl font-bold">Our Blog</h1>
+          <p className="w-110">
+            We're constantly pushing the boundaries of what's possible and
+            seeking new ways to improve our services.
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center gap-10 bg-[#ffffff] rounded-lg">
+          <div>
+            <img src="/images/blogsc.png" alt="" />
+          </div>
+
+          <div className="flex flex-col gap-7 justify-start text-start py-8 w-1/2">
+            <h1 className="text-xl">May 30, 2023</h1>
+            <h1 className="text-5xl font-semibold w-140">
+              5 reasons why Techty is the go-to choice for small business.
+            </h1>
+            <p className="text-xl w-140">
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center gap-8 mt-2 px-10 py-15 bg-[#F1F1F1] font-space">
+        <div className="flex flex-col text-center gap-5 items-center justify-center">
+          <h1 className="text-3xl font-bold">Read All Articles</h1>
+          <p className="w-110">
+            We're constantly pushing the boundaries of what's possible and
+            seeking new ways to improve our services.
+          </p>
+        </div>
+
+        <div className="flex gap-8 justify-between  items-center">
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/blog1.png" alt="" />
+            <p>May 05,2023</p>
+            <h3 className="font-semibold">
+              5 reasons why Techty is the go- to choice for small busines
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/blog1.png" alt="" />
+            <p>May 05,2023</p>
+            <h3 className="font-semibold">
+              5 reasons why Techty is the go- to choice for small busines
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/blog1.png" alt="" />
+            <p>May 05,2023</p>
+            <h3 className="font-semibold">
+              5 reasons why Techty is the go- to choice for small busines
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/blog1.png" alt="" />
+            <p>May 05,2023</p>
+            <h3 className="font-semibold">
+              5 reasons why Techty is the go- to choice for small busines
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/blog1.png" alt="" />
+            <p>May 05,2023</p>
+            <h3 className="font-semibold">
+              5 reasons why Techty is the go- to choice for small busines
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+
+          <div className="flex flex-col rounded-md gap-3">
+            <img src="/images/blog1.png" alt="" />
+            <p>May 05,2023</p>
+            <h3 className="font-semibold">
+              5 reasons why Techty is the go- to choice for small busines
+            </h3>
+            <p>
+              Let us manage your IT for you so that you can get back to doing
+              what you do best.
+            </p>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </>
-  )
+  );
 }
 
 export default Blog

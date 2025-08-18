@@ -2,34 +2,30 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const FetchedData = () => {
-  const [comments, setComments] = useState([]);
+  const [posts, setPosts] = useState([])
 
   useEffect(() => {
     const dataFetch = async () => {
       try {
-        const res = await axios.get("https://dummyjson.com/posts");
-        const result = res.data.comments;
-        setComments(result)
+        const res = await axios.get('https://dummyjson.com/posts');
+        setPosts(res.data.posts)
       } catch (error) {
-        console.log(error.message);
+        console.log(error.message)
       }
     };
-    dataFetch();
-  }, []);
+    dataFetch()
 
+  }, [])
   return (
-    <>
-      <div className="grid grid-cols-3 gap-5">
-        {comments.map((comment, index) => (
-            <div key={index} className="flex flex-col p-3 gap-4 rounded-md shadow-xl border-1">
-            <p>{comment.id}</p>
-            <p>{comment.title}</p>
-            <p>{comment.body}</p>
-            <p>{comment.view}</p>
-          </div>
-        ))}
-      </div>
-    </>
+    <div className='grid grid-cols-3 gap-10 p-5 px-10'>
+      {posts.map((post) =>(
+        <div className='flex flex-col rounded-lg shadow-md hover:shadow-gray-300'>
+          <div>{post.title}</div>
+          <div>{post.body}</div>
+          <div>{post.reaction}</div>
+        </div>
+      ))}
+    </div>
   );
 };
 

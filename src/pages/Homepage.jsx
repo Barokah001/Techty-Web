@@ -38,6 +38,7 @@ const Homepage = () => {
               />
             </div>
             <div className="flex justify-center items-center gap-2 py-2">
+              <img src="images/Star.png" alt="" />
               <h3 className="font-semibold text-normal">Trustpilot</h3>
               <img src="/images/stars.png" alt="" />
               <p className="text-xs">4900 + 310</p>
@@ -291,7 +292,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* <FetchedData /> */}
+      <FetchedData />
 
       <div className="flex flex-col justify-center items-center gap-7 px-10 py-15 bg-[#F0F8FF]">
         <div className="flex justify-center items-center w-85">
