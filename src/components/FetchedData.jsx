@@ -23,7 +23,7 @@ const FetchedData = () => {
         return (words[0][0] + words[words.length - 1][0]).toUpperCase();
   }
   return (
-    <div className="grid grid-cols-3 gap-10 py-15 px-10">
+    <div className="grid md:grid-cols-3 gap-4 md:gap-10 py-15 px-3 md:px-10">
       {comments.slice(0, 6).map((comment) => (
         <div className="flex flex-col rounded-lg shadow-md hover:shadow-gray-300 p-5 gap-3">
           <div>
@@ -35,7 +35,7 @@ const FetchedData = () => {
             time to listen to what made us unique as a business.”
           </div>
           <div className="flex justify-start items-center gap-7">
-          <div className="w-24 h-24 flex items-center justify-center rounded-full bg-[#F0F8FF] text-[#28D08A] font-bold text-lg">
+          <div className="w-24 h-24 flex items-center justify-center rounded-full bg-[#F0F8FF] text-[#28D08A] font-bold text-2xl">
             {generateInitials(
               comment.user.fullName
             )}

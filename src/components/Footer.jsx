@@ -3,18 +3,18 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center h-screen w-full bg-[#495460] text-[#FFFFFF] px-10">
+    <div className="flex flex-col items-center h-fit w-full bg-[#495460] text-[#FFFFFF] px-10">
       <div className="flex justify-between items-center h-[90px] w-full mt-10 py-15">
         <div className="font-semibold text-3xl w-[570px]">
           Ready to take your business to the next level?
         </div>
-        <Button style={"bg-[#28D08A]"} name={'Request a Free Demo'}/>
+        <Button style={"bg-[#28D08A]"} name={"Request a Free Demo"} />
       </div>
 
       <hr className="border-t border-gray-500 w-[90%] my-25" />
 
-      <div className="flex justify-between items-center w-full px-10">
-        <div className="flex flex-col gap-1 justify-start items-start h-[230px]">
+      <div className="flex md:justify-between justify-start items-center w-full px-10 py-15">
+        <div className="flex flex-col gap-1 justify-start items-start md:h-[230px]">
           <div className="flex flex-col items-start pb-8">
             <img src="/images/Logo..png" />
             <h1 className="text-2xl font-bold">Techty</h1>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center h-[230px]">
+        <div className="flex flex-col md:items-center md:h-[230px]">
           <h3 className="text-xl font-semibold">Quick links</h3>
           <ul>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
@@ -52,7 +52,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col items-center h-[230px]">
+        <div className="flex flex-col items-start md:items-center md:h-[230px]">
           <h3 className="text-xl font-semibold">Socials</h3>
           <ul>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
@@ -67,7 +67,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col justify-start w-80 items-start gap-10 h-[230px]">
+        <div className="flex flex-col justify-start w-80 items-start gap-10 md:h-[230px]">
           <h3 className="text-xl font-semibold">Our Newsletter</h3>
           <p className="w-[80%]">
             Subscribe to our newsletter to get our news delivered to you.
