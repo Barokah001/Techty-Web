@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import ServiceStates from '../components/ServiceStates';
 
 const Services = () => {
   return (
@@ -82,6 +83,8 @@ const Services = () => {
           </div>
         </div>
       </div>
+
+      <ServiceStates />
 
       <div className="flex flex-col gap-10 w-full min-h-screen py-20 px-10 justify-center items-center font-space bg-[#F0F8FF]">
         <h1 className="font-bold text-3xl w-90 text-center">
@@ -185,9 +188,9 @@ const Services = () => {
           </div>
 
           <div className="flex flex-col gap-8 justify-center items-center bg-[#F0F8FF] rounded-lg p-8">
-            <h1 className="font-semibold text-2xl">Quick Solutions</h1>
+            <h1 className="font-semibold text-2xl">Monthly Solutions</h1>
             <div className="flex">
-              <h1 className="font-bold text-5xl">$20</h1>
+              <h1 className="font-bold text-5xl">$99</h1>
               <p className="font-semibold text-2xl">/hour</p>
             </div>
             <button className="w-90 bg-[#28D08A] text-white p-2 rounded-md cursor-pointer">
