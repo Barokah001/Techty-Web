@@ -2,9 +2,9 @@ import React from "react";
 import Button from "./Button";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({style}) => {
   return (
-    <nav className="flex justify-between items-center px-10 py-3 bg-[#F0F8FF] font-space">
+    <nav className={`flex justify-between items-center px-10 py-3 font-space ${style}`}>
       <div className="flex gap-1 justify-center items-center">
         <img src="/images/Logo..png" />
         <h1 className="text-2xl font-bold">Techty</h1>
@@ -62,7 +62,10 @@ const Navbar = () => {
           Contact Us
         </NavLink>
 
-        <Button />
+        <Button
+          name="Request a Free Demo"
+          style={'bg-black hover:bg-[#28D08A]'}
+        />
       </div>
     </nav>
   );

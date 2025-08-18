@@ -7,7 +7,7 @@ import FetchedData from '../components/FetchedData';
 const Homepage = () => {
   return (
     <section className="font-space">
-      <Navbar />
+      <Navbar style={"bg-[#F0F8FF]"} />
       <div className="bg-[#F0F8FF] h-screen px-10 font-space">
         <div className="flex justify-center items-center ">
           <div className="flex flex-col">
@@ -22,10 +22,14 @@ const Homepage = () => {
             </p>
 
             <div className="flex gap-6">
-              <Button />
-              <button className="px-6 py-2 bg-[#28D08A] hover:bg-black text-[#ffffff] text-l font-normal   rounded-md">
-                Hire an Expert
-              </button>
+              <Button
+                name="Request a Demo"
+                style={"bg-black hover:bg-[#28D08A]"}
+              />
+              <Button
+                name="Hire an Expert"
+                style={"bg-[#28D08A] hover:bg-black"}
+              />
             </div>
           </div>
 
@@ -141,8 +145,7 @@ const Homepage = () => {
             </div>
           </div>
 
-
-        {/* HIDDEN DIVS */}
+          {/* HIDDEN DIVS */}
           {/* <div className="flex justify-center gap-10 items-center my-10 w-full">
             <div className=" w-3/4">
               <img src="/images/aboutSc.png" alt="" />

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({name, style}) => {
   return (
     <div className="flex">
-      <button className="px-6 py-2 bg-black hover:bg-[#28D08A] text-[#ffffff] text-l font-normal   rounded-md font-space">
-        Request a Free Demo
+      <button className={`px-6 py-2 text-[#ffffff] text-l font-normal rounded-md font-space ${style}`}>
+        {name}
       </button>
     </div>
   );

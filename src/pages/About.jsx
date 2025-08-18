@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 const About = () => {
   return (
     <>
-      <Navbar />
+      <Navbar style={"bg-[#F0F8FF]"} />
       <div className="flex justify-center items-start py-10 h-[600px] w-full px-10 font-space bg-[#F0F8FF]">
         <div className="w-full">
           <img src="/images/frame1.png" className="h-[500px]" />

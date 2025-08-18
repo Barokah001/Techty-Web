@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="font-semibold text-3xl w-[570px]">
           Ready to take your business to the next level?
         </div>
-        <Button />
+        <Button style={"bg-[#28D08A]"} name={'Request a Free Demo'}/>
       </div>
 
       <hr className="border-t border-gray-500 w-[90%] my-25" />
