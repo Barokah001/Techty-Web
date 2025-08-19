@@ -94,7 +94,7 @@ const ServiceStates = () => {
                   create a page using a variety of unique blocks.
                 </p>
               </div>
-              <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80">
+              <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80 md:w-140">
                 <div className="flex gap-1">
                   <div>
                   <img src="/images/checkbox.png" alt="" />
@@ -138,7 +138,7 @@ const ServiceStates = () => {
                   create a page using a variety of unique blocks.
                 </p>
               </div>
-              <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80">
+              <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80 md:w-140">
                 <div className="flex gap-1">
                   <div>
                   <img src="/images/checkbox.png" alt="" />
@@ -182,7 +182,7 @@ const ServiceStates = () => {
                   create a page using a variety of unique blocks.
                 </p>
               </div>
-              <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80">
+              <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80 md:w-140">
                 <div className="flex gap-1">
                   <div>
                   <img src="/images/checkbox.png" alt="" />
