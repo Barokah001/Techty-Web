@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col gap-7 justify-center items-center px-10 font-space py-10 bg-[#F1F1F1] min-h-screen">
+      <div className="flex flex-col gap-7 justify-center items-center px-5 md:px-10 font-space py-10 bg-[#F1F1F1] min-h-screen">
         <h1 className="flex items-center justify-center font-bold text-center text-3xl">
           Contact Us
         </h1>
@@ -15,7 +15,7 @@ const Contact = () => {
           new ways to improve our services.
         </p>
 
-        <div className="flex justify-between items-start w-full my-15">
+        <div className="flex flex-col md:flex-row md:justify-between items-start w-full my-15">
           <div className="flex flex-col justify-start ">
             <h2 className="font-semibold text-xl w-90">
               We’re happy to discuss your project and answer any question
@@ -64,7 +64,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex flex-col p-7 gap-4 bg-[#FFFFFF] rounded-sm">
+          <div className="flex flex-col p-4 md:p-7 gap-4 bg-[#FFFFFF] rounded-sm">
             <h2 className="font-semibold text-xl ">Send Us Message</h2>
             <p className="text-[#6F7681] w-90">
               Feel free to fill up the form and our team will get back to you
@@ -73,7 +73,7 @@ const Contact = () => {
 
             <div className="flex w-full">
               <form action="" className="flex flex-col gap-3 min-w-xl h-auto ">
-                <div className="flex justify-center items-center gap-5 w-full">
+                <div className="flex justify-center items-center gap-5 w-85  md:w-full">
                   <input
                     type="text"
                     placeholder="Name"
@@ -90,11 +90,11 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Message"
-                    className="p-2 bg-gray-100 w-full pb-50 rounded-md focus:outline-none focus:ring-0"
+                    className="p-2 bg-gray-100 w-85 md:w-full pb-50 rounded-md focus:outline-none focus:ring-0"
                   />
                 </div>
 
-                <button className="w-full bg-[#28D08A] p-2 text-white cursor-pointer rounded-md">
+                <button className="w-85 md:w-full bg-[#28D08A] p-2 text-white cursor-pointer rounded-md">
                   Send Message
                 </button>
               </form>

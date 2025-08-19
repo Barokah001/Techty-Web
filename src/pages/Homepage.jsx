@@ -10,9 +10,9 @@ const Homepage = () => {
     <section className="font-space">
       <Navbar style={"bg-[#F0F8FF]"} />
       <div className="bg-[#F0F8FF] h-screen px-10 font-space">
-        <div className="flex justify-center items-center ">
-          <div className="flex flex-col">
-            <h1 className="text-4xl font-bold pb-15">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+          <div className="flex flex-col justify-center items-center md:justify-start md:items-start text-center md:text-start">
+            <h1 className="text-3xl font-semibold md:text-4xl md:font-bold pb-5 md:pb-15">
               Secure <span className="text-[#28D08A]">business</span> <br />
               with Techty security.
             </h1>
@@ -22,10 +22,10 @@ const Homepage = () => {
               and feature-complete SaaS showcase.
             </p>
 
-            <div className="flex gap-6">
+            <div className="flex flex-col md:flex-row gap-6">
               <Button
                 name="Request a Demo"
-                style={"bg-black hover:bg-[#28D08A]"}
+                style={"bg-black hover:bg-[#28D08A] "}
               />
               <Button
                 name="Hire an Expert"
@@ -39,7 +39,7 @@ const Homepage = () => {
               <img
                 src="/images/heroSc.png"
                 alt=""
-                className="rounded-md w-[860px]"
+                className="rounded-md w-[860px] p-1"
               />
             </div>
             <div className="flex justify-center items-center gap-2 py-2">
@@ -52,7 +52,7 @@ const Homepage = () => {
         </div>
         <hr className="border-t border-gray-300 w-[90%] my-5" />
 
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col gap-3 md:flex-row  md:justify-between items-center">
           <div>
             <p className="text-xl">Thousands of businesses use Techty</p>
           </div>
@@ -67,7 +67,7 @@ const Homepage = () => {
 
       <ServiceStates />
 
-      <div className="flex items-center justify-betweem w-full bg-[#F0F8FF] h-[320px] px-10  ">
+      <div className="flex flex-col md:flex-row items-center justify-betweem w-full bg-[#F0F8FF] gap-5 md:h-[320px] px-10 py-10 ">
         <div className="pr-10">
           <h1 className="text-2xl font-bold">
             {" "}
@@ -101,12 +101,12 @@ const Homepage = () => {
       </div>
 
       <div className="flex justify-center items-center gap-7 my-15 px-10">
-        <div className="flex flex-col w-1/2">
-          <h1 className="text-4xl font-bold pb-15">
+        <div className="flex flex-col md:w-1/2">
+          <h1 className="text-2xl md:text-4xl font-semibold md:font-bold pb-5 md:pb-15">
             Our most priority is to provide the effective{" "}
             <span className="text-[#28D08A]">solutions.</span>
           </h1>
-          <p className="pb-8 w-[80%]">
+          <p className="pb-4 md:pb-8 w-90 md:w-[80%] text-align">
             With a library full of thousands of templates to choose from, go
             idea to launch in a matter of minutes. Try uploading your own for
             sale.
@@ -116,21 +116,21 @@ const Homepage = () => {
             <Button />
           </div>
         </div>
-        <div className="w-3/4">
+        <div className="w-3/4 hidden md:flex">
           <img src="/images/demoImg.png" alt="" />
         </div>
       </div>
 
-      <div className="flex justify-center items-center bg-[#171A1F] text-white pt-10 pr-10">
+      <div className="flex justify-center items-center bg-[#171A1F] text-white py-10 md:pt-10 md:pr-10 px-10 md:px-0">
         <div>
-          <img src="/images/Rectangle.png" alt="" className="w-3/4" />
+          <img src="/images/Rectangle.png" alt="" className="w-3/4 hidden md:flex" />
         </div>
-        <div className="flex flex-col gap-6 items-start w-1/2">
-          <h1 className="text-4xl font-bold w-130">
+        <div className="flex flex-col gap-6 justify-center md:justify-start text-center items-center md:items-start w-100 md:w-1/2">
+          <h1 className="text-4xl font-bold w-100 md:w-130">
             Personalize your business{" "}
             <span className="text-[#28D08A]">strategy</span> to reach out.
           </h1>
-          <p className="w-130">
+          <p className="w-85 md:w-130">
             Our advisors approach each client individually, so each time we
             select the appropriate insurance for your needs. Thanks to
             conversation, we will adjust the appropriate cover.
@@ -157,7 +157,7 @@ const Homepage = () => {
             <span className="text-[#28D08A]">news</span>
           </h1>
         </div>
-        <div className="flex gap-7 justify-between  items-center ">
+        <div className="flex flex-col md:flex-row gap-7 justify-between  items-center ">
           <div className="flex flex-col rounded-md gap-3">
             <img src="/images/newsOne.png" alt="" />
             <p>May 30</p>
