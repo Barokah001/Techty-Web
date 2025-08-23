@@ -33,7 +33,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-8 mt-2 px-5 md:px-10 py-20 bg-[#F1F1F1] font-space">
+      <div className="flex flex-col justify-center items-center gap-8 mt-2 px-10 md:px-20 py-20 bg-[#F1F1F1] font-space">
         <div className="flex flex-col text-center gap-5 items-center justify-center">
           <h1 className="text-3xl font-bold">Read All Articles</h1>
           <p className="w-100">

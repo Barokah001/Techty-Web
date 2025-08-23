@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <section className="font-space">
       <Navbar style={"bg-[#F0F8FF]"} />
-      <div className="bg-[#F0F8FF] h-screen px-10 font-space">
+      <div className="bg-[#F0F8FF] h-screen px-10 md:px-20 font-space">
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           <div className="flex flex-col justify-center items-center md:justify-start md:items-start text-center md:text-start">
             <h1 className="text-3xl font-semibold md:text-4xl md:font-bold pb-5 md:pb-15">
@@ -64,10 +64,9 @@ const Homepage = () => {
         </div>
       </div>
 
-
       <ServiceStates />
 
-      <div className="flex flex-col md:flex-row items-center justify-betweem w-full bg-[#F0F8FF] gap-5 md:h-[320px] px-10 py-10 ">
+      <div className="flex flex-col md:flex-row items-center justify-betweem w-full bg-[#F0F8FF] gap-5 md:h-[320px] px-10 md:px-20 py-10 ">
         <div className="pr-10">
           <h1 className="text-2xl font-bold">
             {" "}
@@ -100,7 +99,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-7 my-15 px-10">
+      <div className="flex justify-center items-center gap-7 my-15 px-10 md:px-20">
         <div className="flex flex-col md:w-1/2">
           <h1 className="text-2xl md:text-4xl font-semibold md:font-bold pb-5 md:pb-15">
             Our most priority is to provide the effective{" "}
@@ -121,11 +120,11 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center bg-[#171A1F] text-white py-10 md:pt-10 md:pr-10 px-10 md:px-0">
-        <div>
-          <img src="/images/Rectangle.png" alt="" className="w-3/4 hidden md:flex" />
+      <div className="flex justify-center items-center bg-[#171A1F] text-white py-10 md:py-0 px-10 md:px-20">
+        <div className="hidden md:flex items-start justify-start left-0 top-0">
+          <img src="/images/Rectangle.png" alt="" className="w-3/4" />
         </div>
-        <div className="flex flex-col gap-6 justify-center md:justify-start text-center items-center md:items-start w-100 md:w-1/2">
+        <div className="flex flex-col gap-6 justify-center text-start items-center md:items-start w-100 md:w-1/2">
           <h1 className="text-4xl font-bold w-100 md:w-130">
             Personalize your business{" "}
             <span className="text-[#28D08A]">strategy</span> to reach out.
@@ -150,7 +149,7 @@ const Homepage = () => {
 
       <FetchedData />
 
-      <div className="flex flex-col justify-center items-center gap-7 px-10 py-15 bg-[#F0F8FF]">
+      <div className="flex flex-col justify-center items-center gap-7 px-10 md:px-20 py-15 bg-[#F0F8FF]">
         <div className="flex justify-center items-center w-85">
           <h1 className="text-3xl font-bold text-center">
             Here’s our latest updates from the{" "}
@@ -158,38 +157,46 @@ const Homepage = () => {
           </h1>
         </div>
         <div className="flex flex-col md:flex-row gap-7 justify-between  items-center ">
-          <div className="flex flex-col rounded-md gap-3">
+          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff] ">
             <img src="/images/newsOne.png" alt="" />
-            <p>May 30</p>
-            <h3 className="font-semibold">
-              The future is now: Explore Techty's AI-Powered tools
-            </h3>
-            <p>
-              Let us manage your IT for you so that you can get back to doing
-              what you do best.
-            </p>
+            <div className="flex flex-col justify-center items-start gap-3 p-4">
+              <p claa>May 30</p>
+              <h3 className="font-semibold">
+                The future is now: Explore Techty's AI-Powered tools
+              </h3>
+              <p>
+                Let us manage your IT for you so that you can get back to doing
+                what you do best.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col rounded-md gap-3">
+          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff]">
             <img src="/images/newsTwo.png" alt="" />
-            <p>May 30</p>
-            <h3 className="font-semibold">
-              Cybersecurity threats in 2023: How AI can keep you protected
-            </h3>
-            <p>
-              Let us manage your IT for you so that you can get back to doing
-              what you do best.
-            </p>
+
+            <div className="flex flex-col justify-center items-start gap-3 p-4">
+              <p>May 30</p>
+              <h3 className="font-semibold">
+                Cybersecurity threats in 2023: How AI can keep you protected
+              </h3>
+              <p>
+                Let us manage your IT for you so that you can get back to doing
+                what you do best.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col rounded-md gap-3">
+          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff]">
             <img src="/images/newsThree.png" alt="" />
-            <p>May 30</p>
-            <h3 className="font-semibold">
-              5 reasons why Techty is the go-to choice for small business.
-            </h3>
-            <p>
-              Let us manage your IT for you so that you can get back to doing
-              what you do best.
-            </p>
+
+            <div className="flex flex-col justify-center items-start gap-3 p-4">
+              <p>May 30</p>
+              <h3 className="font-semibold">
+                5 reasons why Techty is the go-to choice for small business.
+              </h3>
+              <p>
+                Let us manage your IT for you so that you can get back to doing
+                what you do best.
+              </p>
+            </div>
           </div>
         </div>
       </div>

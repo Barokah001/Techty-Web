@@ -3,10 +3,10 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center h-fit w-full bg-[#495460] text-[#FFFFFF] px-10">
+    <div className="flex flex-col items-center h-fit w-full bg-[#495460] text-[#FFFFFF] px-10 md:px-20">
       <div className="flex flex-col gap-5 md:flex-row justify-start md:justify-between items-start md:items-center h-fit w-full mt-10 py-15">
         <div className="font-semibold text-3xl w-80 md:w-[570px]">
-          Ready to take your business to the next evel?
+          Ready to take your business to the next level?
         </div>
         <Button style={"bg-[#28D08A] "} name={"Request a Free Demo"} />
       </div>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-start h-fit md:items-center md:h-[230px]">
+        <div className="flex flex-col justify-start pt-2 md:pt-0 h-fit md:items-center md:h-[230px]">
           <h3 className="text-xl font-semibold">Quick links</h3>
           <ul>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">

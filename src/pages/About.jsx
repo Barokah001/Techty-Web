@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Navbar style={"bg-[#F0F8FF]"} />
-      <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-20 items-start py-10 md:h-[600px] w-full px-10 font-space bg-[#F0F8FF]">
+      <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-20 items-start py-10 md:h-[600px] w-full px-10 md:px-20 font-space bg-[#F0F8FF]">
         <img src="/images/frame1.png" className="md:h-[500px]" />
         <div className="flex flex-col gap-7 w-full text-justify">
           <div className="flex flex-col gap-3">
@@ -41,7 +41,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-start py-15 px-10 bg-[#FFFFFF] font-space w-full min-h-screen text-justify">
+      <div className="flex flex-col md:flex-row justify-between items-start py-15 px-10 md:px-20 bg-[#FFFFFF] font-space w-full min-h-screen text-justify">
         <div className="flex flex-col gap-4 items-start text-[#4E4E4E] md:w-1/2">
           <h2 className="font-semibold text-xl text-black">
             Message from <span className="text-[#28D08A]">Founder</span>
@@ -77,7 +77,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 items-center justify-center px-10 py-15 w-full font-space">
+      <div className="flex flex-col gap-8 items-center justify-center px-10 md:px-20 py-15 w-full font-space">
         <h1 className="justify-center items-center w-100 text-center text-3xl font-bold">
           Our <span className="text-[#28D08A]"> team</span> behind all the
           success we have

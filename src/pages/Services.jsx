@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <>
       <Navbar style={"bg-[#F0F8FF]"} />
-      <div className="flex flex-col gap-10 w-full min-h-screen py-20 px-5 md:px-10 justify-center items-center font-space bg-[#F0F8FF]">
+      <div className="flex flex-col gap-10 w-full min-h-screen py-20 px-10 md:px-20 justify-center items-center font-space bg-[#F0F8FF]">
         <div className="flex flex-col gap-8 justify-center items-center text-center">
           <h1 className="font-bold text-3xl">
             We provide the best <span className="text-[#28D08A]">service</span>{" "}
@@ -86,7 +86,7 @@ const Services = () => {
 
       <ServiceStates />
 
-      <div className="flex flex-col gap-10 w-full min-h-screen py-20 px-10 justify-center items-center font-space bg-[#F0F8FF]">
+      <div className="flex flex-col gap-10 w-full min-h-screen py-20 px-10 md:px-20 justify-center items-center font-space bg-[#F0F8FF]">
         <h1 className="font-bold text-3xl w-90 text-center">
           We have the best <span className="text-[#28D08A]">Pricing</span>{" "}
           package for you.

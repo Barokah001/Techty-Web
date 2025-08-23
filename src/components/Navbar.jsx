@@ -20,7 +20,7 @@ const Navbar = ({style}) => {
   }
   return (
     <nav
-      className={`flex justify-between items-center px-3 md:px-10 py-3 font-space ${style} w-full`}
+      className={`flex justify-between items-center px-5 md:px-20 py-3 font-space ${style} w-full`}
     >
       <div className="flex gap-1 justify-center items-center">
         <img src="/images/Logo..png" />
@@ -91,6 +91,7 @@ const Navbar = ({style}) => {
       >
         <AlignJustify />
       </div>
+      
       {/* Mobile View */}
 
       <div className="sidebar fixed hidden flex-col justify-start items-start w-2/3 right-0 top-0 text-white backdrop-blur-[8px] px-5 ">

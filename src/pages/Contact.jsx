@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col gap-7 justify-center items-center px-5 md:px-10 font-space py-10 bg-[#F1F1F1] min-h-screen">
+      <div className="flex flex-col gap-7 justify-center items-center px-10 md:px-20 font-space py-10 bg-[#F1F1F1] min-h-screen">
         <h1 className="flex items-center justify-center font-bold text-center text-3xl">
           Contact Us
         </h1>

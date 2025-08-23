@@ -23,7 +23,7 @@ const FetchedData = () => {
         return (words[0][0] + words[words.length - 1][0]).toUpperCase();
   }
   return (
-    <div className="grid md:grid-cols-3 gap-4 md:gap-10 py-15 px-3 md:px-10">
+    <div className="grid md:grid-cols-3 gap-4 md:gap-10 py-15 px-5 md:px-20">
       {comments.slice(0, 6).map((comment) => (
         <div className="flex flex-col rounded-lg shadow-md hover:shadow-gray-300 p-5 gap-3">
           <div>

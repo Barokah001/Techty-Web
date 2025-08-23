@@ -22,7 +22,7 @@ const ServiceStates = () => {
         setThird(!third)
     }
   return (
-    <div className="flex flex-col items-center justify-center px-10 my-15 bg-[#ffffff]">
+    <div className="flex flex-col items-center justify-center px-10 md:px-20 my-15 bg-[#ffffff]">
       <div>
         <h1 className="text-3xl font-semibold items-center justify-center text-center w-90">
           Empower your business <br /> with cutting-edge
