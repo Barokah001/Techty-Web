@@ -84,22 +84,22 @@ const About = () => {
         </h1>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-10 w-full">
-          <div className="flex flex-col gap-3 rounded-md">
+          <div className="flex flex-col gap-3 rounded-md scale-90 hover:scale-100 transition-all duration-700">
             <img src="/images/frame3.png" alt="" />
             <h3 className="font-bold text-l">Hyeon Vivek</h3>
             <p className="text-[#4E4E4E]">Financial Consultant</p>
           </div>
-          <div className="flex flex-col gap-3 rounded-md">
+          <div className="flex flex-col gap-3 rounded-md scale-90 hover:scale-100 transition-all duration-700">
             <img src="/images/frame4.png" alt="" />
             <h3 className="font-bold text-l">Hyeon Vivek</h3>
             <p className="text-[#4E4E4E]">Financial Consultant</p>
           </div>
-          <div className="flex flex-col gap-3 rounded-md">
+          <div className="flex flex-col gap-3 rounded-md scale-90 hover:scale-100 transition-all duration-700">
             <img src="/images/frame3.png" alt="" />
             <h3 className="font-bold text-l">Hyeon Vivek</h3>
             <p className="text-[#4E4E4E]">Financial Consultant</p>
           </div>
-          <div className="flex flex-col gap-3 rounded-md">
+          <div className="flex flex-col gap-3 rounded-md scale-90 hover:scale-100 transition-all duration-700">
             <img src="/images/frame4.png" alt="" />
             <h3 className="font-bold text-l">Hyeon Vivek</h3>
             <p className="text-[#4E4E4E]">Financial Consultant</p>

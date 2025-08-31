@@ -30,10 +30,13 @@ const ServiceStates = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center items-start gap-5 my-10">
+      <div className="flex justify-center items-start gap-5 py-4 my-10 border-b-1 border-black">
         <button
           onClick={firstState}
-          className="flex justify-center gap-5 cursor-pointer" 
+          className={ firstState
+            ? "flex justify-center gap-5 cursor-pointer"
+            : "flex justify-center gap-5 cursor-pointer border-b-2 border-[#28D08A]"
+          }
         >
           <div className="text-[#28D08A] text-6xl font-semibold h-[73px]">
             01
@@ -48,7 +51,11 @@ const ServiceStates = () => {
 
         <button
           onClick={secondState}
-          className="flex justify-center gap-5 cursor-pointer"
+          className={
+            secondState
+              ? "flex justify-center gap-5 cursor-pointer"
+              : "flex justify-center gap-5 cursor-pointer border-b-2 border-[#28D08A]"
+          }
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
             02
@@ -63,7 +70,11 @@ const ServiceStates = () => {
 
         <button
           onClick={thirdState}
-          className="flex justify-center gap-5 cursor-pointer"
+          className={
+            thirdState
+              ? "flex justify-center gap-5 cursor-pointer"
+              : "flex justify-center gap-5 cursor-pointer border-b-2 border-[#28D08A]"
+          }
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
             03
@@ -77,7 +88,6 @@ const ServiceStates = () => {
         </button>
       </div>
 
-      <hr className="border-t-2 border-[#28D08A] w-[90%]" />
 
       <div className="flex">
         {first && (
@@ -97,21 +107,19 @@ const ServiceStates = () => {
               <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80 md:w-140">
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
-                  <p>
-                    We collect ideas from different design inspirations,
-                  </p>{" "}
+                  <p>We collect ideas from different design inspirations,</p>{" "}
                 </div>
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
                   <p>Analysis data for any kind of corrections.</p>
                 </div>
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
                   <p>Finalize the product for the production to be done.</p>
                 </div>
@@ -141,21 +149,19 @@ const ServiceStates = () => {
               <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80 md:w-140">
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
-                  <p>
-                    We collect ideas from different design inspirations,
-                  </p>{" "}
+                  <p>We collect ideas from different design inspirations,</p>{" "}
                 </div>
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
                   <p>Analysis data for any kind of corrections.</p>
                 </div>
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
                   <p>Finalize the product for the production to be done.</p>
                 </div>
@@ -175,7 +181,9 @@ const ServiceStates = () => {
             </div>
             <div className="flex flex-col items-start gap-8 w-95 md:w-3/4 px-7 md:px-0">
               <div className="flex flex-col gap-5">
-                <h3 className="text-[#171A1F] font-semibold">Finalize Products</h3>
+                <h3 className="text-[#171A1F] font-semibold">
+                  Finalize Products
+                </h3>
                 <p className="text-[#4E4E4E] w-80 md:w-135 text-justify">
                   With our Techty company, you can create landing pages that
                   convert more visitors than any other website. You can easily
@@ -185,21 +193,19 @@ const ServiceStates = () => {
               <div className="flex flex-col text-[#4E4E4E] gap-2 text-justify w-80 md:w-140">
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
-                  <p>
-                    We collect ideas from different design inspirations,
-                  </p>{" "}
+                  <p>We collect ideas from different design inspirations,</p>{" "}
                 </div>
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
                   <p>Analysis data for any kind of corrections.</p>
                 </div>
                 <div className="flex gap-1">
                   <div>
-                  <img src="/images/checkbox.png" alt="" />
+                    <img src="/images/checkbox.png" alt="" />
                   </div>
                   <p>Finalize the product for the production to be done.</p>
                 </div>
