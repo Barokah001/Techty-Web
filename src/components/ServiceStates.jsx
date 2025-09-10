@@ -30,13 +30,17 @@ const ServiceStates = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center items-start gap-5 my-10 border-b-1 border-gray-400">
+      <div className="flex flex-col md:flex-row justify-center items-start gap-5 my-10 border-b-1 border-gray-400">
         <button
           onClick={firstState}
-          className={`flex justify-center gap-5 cursor-pointer pb-2 
-      ${first ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`}
+          className={`flex justify-center gap-5 cursor-pointer pb-2
+      ${
+        first
+          ? "border-b-3 border-[#28D08A] text-[#28D08A]"
+          : "border-b border-transparent text-black"
+      }`}
         >
-          <div className="text-[#28D08A] text-6xl font-semibold h-[73px]">
+          <div className="text-6xl font-semibold h-[73px]">
             01
           </div>
           <div className="flex flex-col items-start ">
@@ -51,7 +55,9 @@ const ServiceStates = () => {
           onClick={secondState}
           className={`flex justify-center gap-5 cursor-pointer pb-2 
       ${
-        second ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"
+        second
+          ? "border-b-3 border-[#28D08A] text-[#28D08A]"
+          : "border-b border-transparent text-black"
       }`}
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
@@ -68,7 +74,11 @@ const ServiceStates = () => {
         <button
           onClick={thirdState}
           className={`flex justify-center gap-5 cursor-pointer pb-2 
-      ${third ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`}
+      ${
+        third
+          ? "border-b-3 border-[#28D08A] text-[#28D08A]"
+          : "border-b border-transparent text-black"
+      }`}
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
             03

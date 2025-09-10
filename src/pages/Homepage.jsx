@@ -22,7 +22,7 @@ const Homepage = () => {
               and feature-complete SaaS showcase.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex gap-2 md:gap-6">
               <Button
                 name="Request a Demo"
                 style={"bg-black hover:bg-[#28D08A] "}
