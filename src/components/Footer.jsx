@@ -38,16 +38,16 @@ const Footer = () => {
           <h3 className="text-xl font-semibold">Quick links</h3>
           <ul>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
-              <a href="">About</a>
+              <a href="./about">About</a>
             </li>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
-              <a href="">Services</a>
+              <a href="/services">Services</a>
             </li>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
-              <a href="">Blog</a>
+              <a href="/blog">Blog</a>
             </li>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
-              <a href="">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </li>
           </ul>
         </div>

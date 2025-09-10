@@ -26,7 +26,7 @@ const FetchedData = () => {
         return (words[0][0] + words[words.length - 1][0]).toUpperCase();
   }
   return (
-    <section className="flex flex-col justify-center h-[700px] items-center gap-4 mt-2 px-10 py-20 md:py-10 bg-white font-space">
+    <section className="flex flex-col justify-center md:h-[700px] items-center gap-4 mt-2 px-10 py-20 md:py-10 bg-white font-space">
       {loading ? (
         <ThreeDots
           visible={true}
@@ -39,7 +39,7 @@ const FetchedData = () => {
           wrapperClass=""
         />
       ) : (
-        <div className="grid md:grid-cols-3 gap-4 md:gap-10 py-15 md:py-0 px-10">
+        <div className="grid md:grid-cols-3 gap-4 md:gap-10 py-15 md:py-0">
           {comments.slice(0, 6).map((comment) => (
             <div className="flex flex-col rounded-lg shadow-md hover:shadow-gray-300 p-5 gap-3 scale-90 hover:scale-100 transition-all duration-1000">
               <div>

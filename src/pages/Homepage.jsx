@@ -120,7 +120,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center bg-[#171A1F] text-white py-10 md:py-0 px-10 md:px-20">
+      <div className="flex justify-center items-center bg-[#171A1F] text-white py-10 md:py-0 px-10 md:px-0 md:pr-20">
         <div className="hidden md:flex items-start justify-start left-0 top-0">
           <img src="/images/Rectangle.png" alt="" className="w-3/4" />
         </div>
@@ -157,7 +157,7 @@ const Homepage = () => {
           </h1>
         </div>
         <div className="flex flex-col md:flex-row gap-7 justify-between  items-center ">
-          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff] ">
+          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff] hover:scale-90 transition-all duration-1000 ">
             <img src="/images/newsOne.png" alt="" />
             <div className="flex flex-col justify-center items-start gap-3 p-4">
               <p claa>May 30</p>
@@ -170,7 +170,7 @@ const Homepage = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff]">
+          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff] hover:scale-90 transition-all duration-1000">
             <img src="/images/newsTwo.png" alt="" />
 
             <div className="flex flex-col justify-center items-start gap-3 p-4">
@@ -184,7 +184,7 @@ const Homepage = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff]">
+          <div className="flex flex-col rounded-t-3xl gap-3 bg-[#ffffff] hover:scale-90 transition-all duration-1000">
             <img src="/images/newsThree.png" alt="" />
 
             <div className="flex flex-col justify-center items-start gap-3 p-4">

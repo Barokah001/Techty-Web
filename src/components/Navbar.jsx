@@ -94,10 +94,10 @@ const Navbar = ({style}) => {
       
       {/* Mobile View */}
 
-      <div className="sidebar fixed hidden flex-col justify-start items-start w-2/3 right-0 top-0 text-white backdrop-blur-[8px] px-5 ">
+      <div className="sidebar fixed hidden flex-col gap-4 justify-start items-start w-full right-0 top-19 text-white backdrop-blur-[8px] px-5">
         <div
           onClick={hideSidebar}
-          className="flex py-5 text-xl justify-center items-center text-black font-bold"
+          className="flex py-5 text-2xl justify-center items-center text-black font-bold"
         >
           <X />
         </div>
@@ -117,7 +117,7 @@ const Navbar = ({style}) => {
           className={({ isActive }) =>
             isActive
               ? "text-[#28D08A] font-semibold underline underline-offset-8"
-              : "text-normal text-black"
+              : "text-xl text-black"
           }
         >
           About
@@ -127,7 +127,7 @@ const Navbar = ({style}) => {
           className={({ isActive }) =>
             isActive
               ? "text-[#28D08A] font-semibold underline underline-offset-8"
-              : "text-normal text-black"
+              : "text-xl text-black"
           }
         >
           Services
@@ -137,7 +137,7 @@ const Navbar = ({style}) => {
           className={({ isActive }) =>
             isActive
               ? "text-[#28D08A] font-semibold underline underline-offset-8"
-              : "text-normal text-black"
+              : "text-xl text-black"
           }
         >
           Blog
@@ -147,7 +147,7 @@ const Navbar = ({style}) => {
           className={({ isActive }) =>
             isActive
               ? "text-[#28D08A] font-semibold underline underline-offset-8"
-              : "text-normal text-black"
+              : "text-xl text-black"
           }
         >
           Contact Us

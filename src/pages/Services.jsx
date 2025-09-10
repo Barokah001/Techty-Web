@@ -21,7 +21,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-10 w-full">
-          <div className="flex flex-col gap-4 justify-start p-6 md:p-3 bg-white h-[300px]">
+          <div className="flex flex-col gap-4 justify-start p-6 md:p-3 bg-white h-[300px] hover:scale-80 transition-all duration-1000">
             <div>
               <img src="/images/vector1.png" alt="" />
             </div>
@@ -41,7 +41,7 @@ const Services = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col gap-5 justify-start p-6 md:p-3 bg-white h-[300px]">
+          <div className="flex flex-col gap-5 justify-start p-6 md:p-3 bg-white h-[300px] hover:scale-80 transition-all duration-1000">
             <div>
               <img src="/images/vector2.png" alt="" />
             </div>
@@ -56,7 +56,7 @@ const Services = () => {
               <img src="/images/vector5.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-5 justify-start p-6 md:p-3 bg-white h-[300px]">
+          <div className="flex flex-col gap-5 justify-start p-6 md:p-3 bg-white h-[300px] hover:scale-80 transition-all duration-1000">
             <div>
               <img src="/images/vector3.png" alt="" />
             </div>
@@ -71,7 +71,7 @@ const Services = () => {
               <img src="/images/vector5.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-5 justify-start p-6 md:p-3 bg-white h-[300px]">
+          <div className="flex flex-col gap-5 justify-start p-6 md:p-3 bg-white h-[300px] hover:scale-80 transition-all duration-1000">
             <div>
               <img src="/images/vector4.png" alt="" />
             </div>

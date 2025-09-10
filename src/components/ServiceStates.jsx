@@ -30,12 +30,11 @@ const ServiceStates = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center items-start gap-5 py-4 my-10 border-b-1 border-black">
+      <div className="flex justify-center items-start gap-5 my-10 border-b-1 border-gray-400">
         <button
           onClick={firstState}
-          className={ firstState
-            ? "flex justify-center gap-5 cursor-pointer"
-            : "flex justify-center gap-5 cursor-pointer border-b-2 border-[#28D08A]"
+          className={ `flex justify-center gap-5 cursor-pointer pb-2 
+      ${first ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`
           }
         >
           <div className="text-[#28D08A] text-6xl font-semibold h-[73px]">
@@ -51,10 +50,8 @@ const ServiceStates = () => {
 
         <button
           onClick={secondState}
-          className={
-            secondState
-              ? "flex justify-center gap-5 cursor-pointer"
-              : "flex justify-center gap-5 cursor-pointer border-b-2 border-[#28D08A]"
+         className={ `flex justify-center gap-5 cursor-pointer pb-2 
+      ${second ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`
           }
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
@@ -70,10 +67,8 @@ const ServiceStates = () => {
 
         <button
           onClick={thirdState}
-          className={
-            thirdState
-              ? "flex justify-center gap-5 cursor-pointer"
-              : "flex justify-center gap-5 cursor-pointer border-b-2 border-[#28D08A]"
+          className={ `flex justify-center gap-5 cursor-pointer pb-2 
+      ${third ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`
           }
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
@@ -91,8 +86,8 @@ const ServiceStates = () => {
 
       <div className="flex">
         {first && (
-          <div className="flex justify-center gap-10 items-center my-10 w-full">
-            <div className="hidden md:flex w-3/4">
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10 items-center my-10 w-full">
+            <div className="flex w-3/4">
               <img src="/images/aboutSc.png" alt="" />
             </div>
             <div className="flex flex-col items-start gap-8 w-95 md:w-3/4 px-7 md:px-0">
@@ -133,8 +128,8 @@ const ServiceStates = () => {
         )}
 
         {second && (
-          <div className="flex justify-center gap-10 items-center my-10 w-full">
-            <div className="hidden md:flex w-3/4">
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10 items-center my-10 w-full">
+            <div className="flex w-3/4">
               <img src="/images/state2.jpg" alt="" />
             </div>
             <div className="flex flex-col items-start gap-8 w-95 md:w-3/4 px-7 md:px-0">
@@ -175,8 +170,8 @@ const ServiceStates = () => {
         )}
 
         {third && (
-          <div className="flex justify-center gap-10 items-center my-10 w-full">
-            <div className="hidden md:flex w-3/4">
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10 items-center my-10 w-full">
+            <div className="flex w-3/4">
               <img src="/images/state3.jpg" alt="" />
             </div>
             <div className="flex flex-col items-start gap-8 w-95 md:w-3/4 px-7 md:px-0">
