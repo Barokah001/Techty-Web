@@ -33,14 +33,13 @@ const ServiceStates = () => {
       <div className="flex justify-center items-start gap-5 my-10 border-b-1 border-gray-400">
         <button
           onClick={firstState}
-          className={ `flex justify-center gap-5 cursor-pointer pb-2 
-      ${first ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`
-          }
+          className={`flex justify-center gap-5 cursor-pointer pb-2 
+      ${first ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`}
         >
           <div className="text-[#28D08A] text-6xl font-semibold h-[73px]">
             01
           </div>
-          <div className="hidden md:flex flex-col items-start ">
+          <div className="flex flex-col items-start ">
             <h3 className="text-[#171A1F] font-semibold">Collect Ideas</h3>
             <p className="text-start text-[#4E4E4E]">
               Creating or improving products to meet our user needs.
@@ -50,14 +49,15 @@ const ServiceStates = () => {
 
         <button
           onClick={secondState}
-         className={ `flex justify-center gap-5 cursor-pointer pb-2 
-      ${second ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`
-          }
+          className={`flex justify-center gap-5 cursor-pointer pb-2 
+      ${
+        second ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"
+      }`}
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
             02
           </div>
-          <div className="hidden md:flex flex-col items-start">
+          <div className="flex flex-col items-start">
             <h3 className="text-[#171A1F] font-semibold">Data Analysis</h3>
             <p className="text-start text-[#4E4E4E]">
               Creating or improving products to meet our user needs.
@@ -67,14 +67,13 @@ const ServiceStates = () => {
 
         <button
           onClick={thirdState}
-          className={ `flex justify-center gap-5 cursor-pointer pb-2 
-      ${third ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`
-          }
+          className={`flex justify-center gap-5 cursor-pointer pb-2 
+      ${third ? "border-b-3 border-[#28D08A]" : "border-b border-transparent"}`}
         >
           <div className="text-6xl font-semibold h-[73px] hover:text-[#28D08A]">
             03
           </div>
-          <div className="hidden md:flex flex-col items-start">
+          <div className="flex flex-col items-start">
             <h3 className="text-[#171A1F] font-semibold">Analyze Product</h3>
             <p className="text-start text-[#4E4E4E]">
               Creating or improving products to meet our user needs.
@@ -82,7 +81,6 @@ const ServiceStates = () => {
           </div>
         </button>
       </div>
-
 
       <div className="flex">
         {first && (
