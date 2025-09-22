@@ -94,7 +94,7 @@ const Navbar = ({style}) => {
       
       {/* Mobile View */}
 
-      <div className="sidebar fixed hidden flex-col gap-4 justify-start items-start w-full right-0 top-19 text-white backdrop-blur-[8px] px-5">
+      <div className="sidebar fixed hidden flex-col gap-4 justify-start items-start w-full right-0 top-19 text-white backdrop-blur-[6px] px-5 pb-7">
         <div
           onClick={hideSidebar}
           className="flex py-5 text-2xl justify-center items-center text-black font-bold"

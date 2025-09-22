@@ -7,22 +7,22 @@ const ServiceStates = () => {
     const [third, setThird] = useState(false)
 
     const firstState = () => {
-        setFirst(!first)
+        setFirst(true)
         setSecond(false)
         setThird(false)
     }
     const secondState = () => {
         setFirst(false)
-        setSecond(!second)
+        setSecond(true)
         setThird(false)
     }
     const thirdState = () => {
         setFirst(false)
         setSecond(false)
-        setThird(!third)
+        setThird(true)
     }
   return (
-    <div className="flex flex-col items-center justify-center px-10 md:px-20 my-15 bg-[#ffffff] font-space">
+    <div className="flex flex-col items-center justify-center px-10 md:px-20 my-15 bg-[#ffffff] font-space mt-50 md:mt-0">
       <div>
         <h1 className="text-3xl font-bold items-center justify-center text-center w-90">
           Empower your business <br /> with cutting-edge
@@ -129,7 +129,7 @@ const ServiceStates = () => {
               </div>
               <Button
                 name="Require a free Demo"
-                style={"bg-[#28D08A] hover:bg-[]"}
+                style={"bg-[#28D08A] hover:bg-black"}
               />
             </div>
           </div>

@@ -56,13 +56,15 @@ const Footer = () => {
           <h3 className="text-xl font-semibold">Socials</h3>
           <ul>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
-              <a href="">Twitter</a>
+              <a href="https://x.com/BarokahOyin">Twitter</a>
             </li>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
-              <a href="">Facebook</a>
+              <a href="https://www.instagram.com/barokah_oyin/">Instagram</a>
             </li>
             <li className="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400">
-              <a href="">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/barokah-oyindamola">
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>
