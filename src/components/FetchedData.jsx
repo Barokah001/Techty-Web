@@ -1,40 +1,54 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { ThreeDots } from "react-loader-spinner";
+import { ThreeCircles } from "react-loader-spinner";
 
 const FetchedData = () => {
-  const [comments, setComments] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [comments, setComments] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     const dataFetch = async () => {
       try {
-        const res = await axios.get('https://dummyjson.com/comments');
-        setComments(res.data.comments)
-        setLoading(false)
+        const res = await axios.get("https://dummyjson.com/comments");
+        setComments(res.data.comments);
+        setLoading(false);
       } catch (error) {
-        console.log(error.message)
+        setError(true)
+        setErrorMessage(error.message)
+        console.log(error.message);
+      } finally {
+        setLoading(false)
       }
     };
-    dataFetch()
+    dataFetch();
+  }, []);
 
-  }, [])
+  const generateInitials = (name) => {
+    const words = name.trim().split(" ");
+    if (words.length === 1) return words[0][0].toUpperCase();
+    return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+  };
 
-  const generateInitials = (name)=> {
-        const words = name.trim().split(" ");
-        if (words.length === 1) return words[0][0].toUpperCase();
-        return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+  if (error) {
+    return (
+      <div className="flex flex-col gap-3 items-center justify-center min-h-screen">
+        <p className="text-center text-3xl font-medium">Error occurred</p>
+        <p className="text-center text-xl font-medium">{errorMessage}</p>
+      </div>
+    );
   }
+
   return (
     <section className="flex flex-col justify-center md:h-[700px] items-center gap-4 mt-2 px-10 py-20 md:py-10 bg-white font-space">
       {loading ? (
-        <ThreeDots
+        <ThreeCircles
           visible={true}
-          height="80"
-          width="80"
-          color="#495460"
-          radius="9"
-          ariaLabel="three-dots-loading"
+          height="100"
+          width="100"
+          color="#28D08A"
+          ariaLabel="three-circles-loading"
           wrapperStyle={{}}
           wrapperClass=""
         />
