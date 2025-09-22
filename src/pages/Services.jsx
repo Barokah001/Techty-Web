@@ -36,9 +36,6 @@ const Services = () => {
               <div className="transform transition-all duration-300 group-hover:translate-x-2">
                 <img src="/images/vector5.png" alt="" />
               </div>
-              <span className="opacity-0 translate-x-[-10px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[#28D08A]">
-                Contact Us
-              </span>
             </div>
           </div>
           <div className="flex flex-col gap-5 justify-start p-6 md:p-3 bg-white h-[300px]">
