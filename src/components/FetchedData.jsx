@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { ThreeCircles } from "react-loader-spinner";
+import { BeatLoader } from 'react-spinners';
 
 const FetchedData = () => {
   const [comments, setComments] = useState([]);
