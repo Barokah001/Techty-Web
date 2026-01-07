@@ -43,15 +43,7 @@ const FetchedData = () => {
   return (
     <section className="flex flex-col justify-center md:h-[700px] items-center gap-4 mt-2 px-10 py-20 md:py-10 bg-white font-space">
       {loading ? (
-        <ThreeCircles
-          visible={true}
-          height="100"
-          width="100"
-          color="#28D08A"
-          ariaLabel="three-circles-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-        />
+        <BeatLoader color="#28D08A" loading={true}/>
       ) : (
         <div className="grid md:grid-cols-3 gap-4 md:gap-10 py-15 md:py-0">
           {comments.slice(0, 6).map((comment) => (
